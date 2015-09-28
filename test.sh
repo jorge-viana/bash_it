@@ -101,4 +101,8 @@ echo "Total time: ${global_total_time_milli} milliseconds"
 echo "Finished at: $(date)"
 echo "----------------------------------------------------------------------"
 
+if [ $global_number_failed_tests -ne 0 ]
+then
+  exit 1
+fi
 

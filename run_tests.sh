@@ -2,9 +2,7 @@
 
 # todo
 # make it more modular
-# eventually change the name of the script
-# 
-# comment tests, @ignore, todos
+# comment tests, @ignore, todo's
 
 
 set -u

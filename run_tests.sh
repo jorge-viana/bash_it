@@ -2,8 +2,11 @@
 
 # todo
 # make it more modular
-# comment tests, @ignore, todo's
-
+# test the test runner... nbr of tests and timmings
+#
+# regarding the testcases:
+# implement @befores and @afters, if they are viable
+# implement @ignore
 
 set -u
 

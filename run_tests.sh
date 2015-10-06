@@ -7,6 +7,8 @@
 # regarding the testcases:
 # implement @befores and @afters, if they are viable
 # implement @ignore
+#
+# not giving error when within a file exists tests with same name
 
 set -u
 
@@ -65,7 +67,8 @@ do
 
     _test_start=$(date +%s%N)
 
-    $("$_test")
+    # execute test function
+    $_test
     _test_result=$?
 
     _test_end=$(date +%s%N)

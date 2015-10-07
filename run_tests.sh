@@ -12,6 +12,16 @@
 
 set -u
 
+function assert_equals {
+  
+  local expected=$1
+  local actual=$2
+
+  [ "${expected}" != "${actual}" ] && { echo "expected: ${expected} but was: ${actual}"; return 1; }
+  return 0
+}
+
+
 readonly _MILLI_TO_NANO_FACTOR=$(( 10 ** 6 ))
 
 declare _suite_file=""
